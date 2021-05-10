@@ -5,6 +5,7 @@ import os
 import trueskill as ts
 from pathlib import Path
 from matplotlib import pyplot as plt
+from collections import defaultdict
 
 # %%
 ts_env = ts.TrueSkill(mu=25, sigma=25/3, beta=5, tau=0.3)
@@ -35,14 +36,19 @@ else:
 
 # %%
 ratings = {}
+win_loss = defaultdict(lambda: [0,0])
 for r in rounds.iterrows():
     if r[1]['Aff'] not in ratings:
         ratings[r[1]['Aff']] = ts.Rating()
     if r[1]['Neg'] not in ratings:
         ratings[r[1]['Neg']] = ts.Rating()
     if r[1]['Result'] == 'Aff':
+        win_loss[r[1]['Aff']][0] += 1
+        win_loss[r[1]['Neg']][1] += 1
         ratings[r[1]['Aff']], ratings[r[1]['Neg']] = ts.rate_1vs1(ratings[r[1]['Aff']], ratings[r[1]['Neg']])
     else:
+        win_loss[r[1]['Aff']][1] += 1
+        win_loss[r[1]['Neg']][0] += 1
         ratings[r[1]['Neg']], ratings[r[1]['Aff']] = ts.rate_1vs1(ratings[r[1]['Neg']], ratings[r[1]['Aff']])
 
 # %%
@@ -51,7 +57,7 @@ teams_ranked = sorted(filter(lambda x: ratings[x].sigma < 2, list(ratings.keys()
 print('TrueSkill Ranks:')
 for i in range(50):
     team = teams_ranked[i]
-    print(f'{i+1}. {team} ({round(ratings[team].mu, 2)} ± {round(ratings[team].sigma, 2)})')
+    print(f'{i+1}.  {team} ({round(ratings[team].mu, 2)} ± {round(ratings[team].sigma, 2)}) [{win_loss[team][0]}W {win_loss[team][1]}L]  ')
 
 # %%
 for team in ratings:
