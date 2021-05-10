@@ -56,8 +56,13 @@ for i in range(50):
 # %%
 for team in ratings:
     plt.hist([x.mu for x in ratings.values()])
+
 # %%
 print('Most Active Teams (# of rounds): ')
 rounds['Aff'].append(rounds['Neg']).value_counts()[:30]
+
+# %%
+print('Most Active Judges (# of rounds):')
+rounds['Judge'].value_counts()[:30]
 
 # %%
