@@ -54,7 +54,7 @@ def rate(rounds):
     return ratings, win_loss
 
 ratings, win_loss = rate(rounds)
-pool = 10
+pool = 100
 for i in range(pool-1):
     rounds = shuffle(rounds)
     temp, _ = rate(rounds)
