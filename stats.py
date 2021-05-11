@@ -9,12 +9,12 @@ from collections import defaultdict
 from sklearn.utils import shuffle
 
 # %%
-ts_env = ts.TrueSkill(mu=25, sigma=25/3, beta=5, tau=0.3)
-ts_env.make_as_global()
+# ts_env = ts.TrueSkill(mu=25, sigma=25/3, beta=5, tau=0.3)
+# ts_env.make_as_global()
 
 # %% read round CSVs
 rounds = pd.DataFrame()
-pathlist = Path('data').rglob('*.csv')
+pathlist = Path('data/NDT-CEDA').rglob('*.csv')
 for path in pathlist:
     rounds = rounds.append(pd.read_csv(str(path)))
 print(f'{len(rounds)} rounds loaded.')
