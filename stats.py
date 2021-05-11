@@ -66,13 +66,17 @@ print(df.to_markdown())
 
 # %%
 print('Most Active Teams (# of rounds): ')
-i = 1
-for team in rounds['Aff'].append(rounds['Neg']).value_counts()[:30].iteritems():
-    print(f'{i}.  {team[0]} ({team[1]})  ')
-    i += 1
+rounds['Aff'].append(rounds['Neg']).value_counts()[:30]
+
 
 # %%
 print('Most Active Judges (# of rounds):')
-rounds['Judge'].value_counts()[:30]
-
+labels = ('Judge', '# of rounds', 'Aff Votes', 'Neg Votes')
+df = pd.DataFrame(columns=labels)
+active = rounds['Judge'].value_counts()[:50]
+for judge in active.iteritems():
+    row = pd.Series([judge[0], judge[1], len(rounds[(rounds['Judge'] == judge[0]) & (rounds['Result'] == 'Aff')]), len(rounds[(rounds['Judge'] == judge[0]) & (rounds['Result'] == 'Neg')])], index=labels)
+    df = df.append(row, ignore_index=True)
+df.index = np.arange(1, len(df)+1)
+print(df.to_markdown())
 # %%

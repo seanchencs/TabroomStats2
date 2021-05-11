@@ -2,7 +2,7 @@
 Python data science stack based rewrite of TabroomStats. Rankings implemented with the TrueSkill algorithm (non-linear). Includes data for 2020-21 TOC bid tournaments.
 
 ## HS TOC 20-21
-Top 50 Teams by TrueSkill Rating (σ < 2):
+Top 100 Teams by TrueSkill Rating (σ < 2):
 |     | Team                         | TrueSkill    |   Wins |   Losses | Win Percentage   |
 |----:|:-----------------------------|:-------------|-------:|---------:|-----------------:|
 |   1 | Minneapolis South CC         | 39.11 ± 1.78 |     64 |       20 | 76.19%           |
@@ -105,4 +105,57 @@ Top 50 Teams by TrueSkill Rating (σ < 2):
 |  98 | Bronx Science CE             | 28.99 ± 1.86 |     30 |       25 | 54.55%           |
 |  99 | Bronx Science FV             | 28.98 ± 1.76 |     36 |       29 | 55.38%           |
 | 100 | ADL BT                       | 28.88 ± 1.99 |     23 |       18 | 56.1%            |
-  
+     
+Most Active Judges (# of rounds):  
+|    | Judge             |   # of rounds |   Aff Votes |   Neg Votes |
+|---:|:------------------|--------------:|------------:|------------:|
+|  1 | Tim Freehan       |            71 |          38 |          33 |
+|  2 | KJ Reese          |            60 |          30 |          30 |
+|  3 | Dhruv Sudesh      |            59 |          31 |          28 |
+|  4 | Magi Ortiz        |            56 |          18 |          38 |
+|  5 | David Kilpatrick  |            54 |          22 |          32 |
+|  6 | David Sposito     |            52 |          20 |          32 |
+|  7 | Parth Shah        |            52 |          26 |          26 |
+|  8 | Mac Cronin        |            51 |          20 |          31 |
+|  9 | Ethan Muse        |            51 |          25 |          26 |
+| 10 | Cade Cottrell     |            50 |          22 |          28 |
+| 11 | Ansh Khullar      |            50 |          21 |          29 |
+| 12 | Cody Morrow       |            48 |          28 |          20 |
+| 13 | Daniel Iskhakov   |            48 |          31 |          17 |
+| 14 | Maddie Pieropan   |            47 |          17 |          30 |
+| 15 | Larry Dang        |            46 |          29 |          17 |
+| 16 | Debnil Sur        |            46 |          25 |          21 |
+| 17 | Kevin Hirn        |            44 |          23 |          21 |
+| 18 | Chris Paredes     |            43 |          19 |          24 |
+| 19 | Scott Wheeler     |            42 |          21 |          21 |
+| 20 | Nick Pereda       |            42 |          16 |          26 |
+| 21 | Robin Forsyth     |            42 |          24 |          18 |
+| 22 | H Dylan Willett   |            41 |          22 |          19 |
+| 23 | Will Halverson    |            40 |          20 |          20 |
+| 24 | Kenny Delph       |            40 |          17 |          23 |
+| 25 | Kelly Skoulikaris |            39 |          15 |          24 |
+| 26 | Allie Chase       |            39 |          20 |          19 |
+| 27 | Misty Tippets     |            39 |          21 |          18 |
+| 28 | Dan Stanfield     |            39 |          18 |          21 |
+| 29 | Wayne Tang        |            38 |          23 |          15 |
+| 30 | Ashton Smith      |            38 |          15 |          23 |
+| 31 | Maggie Wells      |            38 |          21 |          17 |
+| 32 | Simon Weiss       |            36 |          15 |          21 |
+| 33 | Sam Gustavson     |            36 |          20 |          16 |
+| 34 | Isaac Segal       |            36 |          16 |          20 |
+| 35 | Brianna Aaron     |            36 |          22 |          14 |
+| 36 | Tim Ellis         |            35 |          17 |          18 |
+| 37 | Nate Graziano     |            35 |          22 |          13 |
+| 38 | DJ Williams       |            35 |          20 |          15 |
+| 39 | Aidan Kane        |            34 |          20 |          14 |
+| 40 | Joshua Gonzalez   |            34 |          15 |          19 |
+| 41 | April Ma          |            34 |          15 |          19 |
+| 42 | Alex Sherman      |            34 |          17 |          17 |
+| 43 | Roman Kezios      |            34 |          20 |          14 |
+| 44 | Colton Gilbert    |            33 |          18 |          15 |
+| 45 | Cat Jacob         |            33 |          12 |          21 |
+| 46 | Yao Yao Chen      |            33 |          15 |          18 |
+| 47 | David Coates      |            33 |          18 |          15 |
+| 48 | Jack Moore        |            33 |          19 |          14 |
+| 49 | Jorman Antigua    |            33 |          15 |          18 |
+| 50 | Robert Whitaker   |            32 |          18 |          14 |
