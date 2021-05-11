@@ -2,109 +2,109 @@
 Python data science stack based rewrite of TabroomStats. Rankings implemented with the TrueSkill algorithm (non-linear). Includes data for 2020-21 TOC bid tournaments.
 
 ## HS TOC 20-21
-Top 100 Teams by TrueSkill Rating (σ < 2):
+Top 100 Teams by TrueSkill Rating (σ < 2, pool = 10):
 |     | Team                         | TrueSkill    |   Wins |   Losses | Win Percentage   |
-|----:|:-----------------------------|:-------------|-------:|---------:|-----------------:|
-|   1 | Minneapolis South CC         | 39.11 ± 1.78 |     64 |       20 | 76.19%           |
-|   2 | Coppell KC                   | 38.66 ± 1.74 |     58 |       20 | 74.36%           |
-|   3 | North Broward Prep DR        | 38.47 ± 1.77 |     82 |       25 | 76.64%           |
-|   4 | Montgomery Bell MP           | 38.12 ± 1.85 |     37 |       10 | 78.72%           |
-|   5 | Lexington BY                 | 37.65 ± 1.79 |     46 |       15 | 75.41%           |
-|   6 | Caddo Magnet KL              | 37.39 ± 1.78 |     45 |       18 | 71.43%           |
-|   7 | Glenbrook North BM           | 37.3 ± 1.8   |     42 |       17 | 71.19%           |
-|   8 | Westminster SB               | 36.95 ± 1.74 |     49 |       24 | 67.12%           |
-|   9 | Bellarmine  HM               | 36.77 ± 1.82 |     40 |       17 | 70.18%           |
-|  10 | Glenbrook South MJ           | 36.47 ± 1.99 |     23 |       10 | 69.7%            |
-|  11 | New Trier HM                 | 36.06 ± 1.78 |     44 |       18 | 70.97%           |
-|  12 | Glenbrook North BC           | 35.89 ± 1.87 |     38 |       16 | 70.37%           |
-|  13 | Chaminade AH                 | 35.78 ± 1.78 |     36 |       20 | 64.29%           |
-|  14 | Glenbrook South JM           | 35.62 ± 1.99 |     28 |       12 | 70.0%            |
-|  15 | Bellarmine  IG               | 35.45 ± 1.78 |     45 |       20 | 69.23%           |
-|  16 | Peninsula RW                 | 35.32 ± 1.75 |     47 |       22 | 68.12%           |
-|  17 | Little Rock Central GR       | 35.14 ± 1.78 |     49 |       24 | 67.12%           |
-|  18 | West HS SLC GR               | 35.08 ± 1.75 |     46 |       25 | 64.79%           |
-|  19 | New Trier RW                 | 35.06 ± 1.79 |     54 |       20 | 72.97%           |
-|  20 | Gunn OS                      | 35.05 ± 1.77 |     56 |       23 | 70.89%           |
-|  21 | McQueen LR                   | 35.03 ± 1.84 |     49 |       18 | 73.13%           |
-|  22 | Edina AA                     | 35.01 ± 1.75 |     49 |       23 | 68.06%           |
-|  23 | Maine East PP                | 34.96 ± 1.82 |     46 |       21 | 68.66%           |
-|  24 | Northside  RS                | 34.84 ± 1.8  |     36 |       20 | 64.29%           |
-|  25 | CK McClatchy BG              | 34.81 ± 1.82 |     46 |       19 | 70.77%           |
-|  26 | Walter Payton MW             | 34.54 ± 1.9  |     32 |       15 | 68.09%           |
-|  27 | Greenhill FS                 | 34.51 ± 1.78 |     43 |       18 | 70.49%           |
-|  28 | Berkeley Prep KZ             | 34.48 ± 1.75 |     41 |       24 | 63.08%           |
-|  29 | Montgomery Bell PC           | 34.43 ± 1.86 |     32 |       15 | 68.09%           |
-|  30 | Westminster YL               | 34.29 ± 1.88 |     23 |       13 | 63.89%           |
-|  31 | Eagan LS                     | 34.22 ± 1.74 |     42 |       26 | 61.76%           |
-|  32 | Pine Crest ER                | 34.21 ± 1.82 |     47 |       22 | 68.12%           |
-|  33 | Mamaroneck RM                | 34.2 ± 1.87  |     33 |       14 | 70.21%           |
-|  34 | Mamaroneck DR                | 34.09 ± 1.75 |     61 |       28 | 68.54%           |
-|  35 | Northview AI                 | 34.07 ± 1.79 |     37 |       20 | 64.91%           |
-|  36 | North Broward Prep GG        | 34.06 ± 1.73 |     54 |       33 | 62.07%           |
-|  37 | Reagan AG                    | 34.03 ± 1.86 |     46 |       16 | 74.19%           |
-|  38 | Meadows HY                   | 34.01 ± 1.77 |     39 |       19 | 67.24%           |
-|  39 | Liberal Arts and Science GP  | 33.89 ± 1.74 |     56 |       27 | 67.47%           |
-|  40 | Notre Dame KS                | 33.83 ± 1.94 |     26 |       15 | 63.41%           |
-|  41 | Little Rock Central LP       | 33.79 ± 1.93 |     24 |       13 | 64.86%           |
-|  42 | Peninsula FP                 | 33.78 ± 1.78 |     37 |       22 | 62.71%           |
-|  43 | Woodward GR                  | 33.69 ± 1.92 |     29 |       14 | 67.44%           |
-|  44 | Westminster BW               | 33.39 ± 1.8  |     38 |       23 | 62.3%            |
-|  45 | Washburn Rural PW            | 33.36 ± 1.81 |     34 |       18 | 65.38%           |
-|  46 | Valley International Prep AU | 33.24 ± 1.74 |     50 |       26 | 65.79%           |
-|  47 | Liberal Arts and Science BR  | 33.16 ± 1.75 |     56 |       28 | 66.67%           |
-|  48 | Greenhill GR                 | 33.04 ± 1.78 |     35 |       21 | 62.5%            |
-|  49 | SF Roosevelt LT              | 32.94 ± 1.8  |     44 |       20 | 68.75%           |
-|  50 | Glenbrook North BG           | 32.92 ± 1.78 |     38 |       22 | 63.33%           |
-|  51 | Lexington TK                 | 32.77 ± 1.96 |     27 |       15 | 64.29%           |
-|  52 | Georgetown Day BS            | 32.77 ± 1.82 |     36 |       18 | 66.67%           |
-|  53 | Stuyvesant NR                | 32.5 ± 1.83  |     42 |       21 | 66.67%           |
-|  54 | Notre Dame DN                | 32.5 ± 1.78  |     47 |       23 | 67.14%           |
-|  55 | New Trier JW                 | 32.47 ± 1.76 |     43 |       27 | 61.43%           |
-|  56 | Westminster KY               | 32.43 ± 1.93 |     28 |       14 | 66.67%           |
-|  57 | James Logan BM               | 32.43 ± 1.89 |     34 |       20 | 62.96%           |
-|  58 | Westwood NY                  | 32.34 ± 1.81 |     45 |       23 | 66.18%           |
-|  59 | Kent Denver CM               | 32.26 ± 1.87 |     35 |       21 | 62.5%            |
-|  60 | Notre Dame AY                | 32.21 ± 1.86 |     33 |       17 | 66.0%            |
-|  61 | Barstow BM                   | 32.19 ± 1.89 |     29 |       15 | 65.91%           |
-|  62 | Shark RW                     | 32.0 ± 1.84  |     39 |       21 | 65.0%            |
-|  63 | Georgetown Day MW            | 31.92 ± 1.79 |     30 |       20 | 60.0%            |
-|  64 | Liberal Arts and Science HW  | 31.88 ± 1.74 |     47 |       28 | 62.67%           |
-|  65 | Georgetown Day BL            | 31.87 ± 1.88 |     31 |       17 | 64.58%           |
-|  66 | Archbishop Mitty DR          | 31.85 ± 1.87 |     35 |       18 | 66.04%           |
-|  67 | Interlake CP                 | 31.82 ± 1.9  |     27 |       16 | 62.79%           |
-|  68 | Bellarmine  MT               | 31.68 ± 1.9  |     28 |       18 | 60.87%           |
-|  69 | Oak Park and River Forest SR | 31.65 ± 1.91 |     27 |       17 | 61.36%           |
-|  70 | Damien DT                    | 31.61 ± 1.76 |     41 |       28 | 59.42%           |
-|  71 | Calvert Hall BL              | 31.58 ± 1.76 |     47 |       27 | 63.51%           |
-|  72 | Alpharetta SN                | 31.55 ± 1.86 |     29 |       19 | 60.42%           |
-|  73 | Leland LZ                    | 31.17 ± 1.88 |     31 |       17 | 64.58%           |
-|  74 | Liberal Arts and Science MC  | 31.11 ± 1.76 |     38 |       26 | 59.38%           |
-|  75 | Niles West BB                | 30.98 ± 1.77 |     43 |       30 | 58.9%            |
-|  76 | Peninsula MS                 | 30.85 ± 1.81 |     33 |       26 | 55.93%           |
-|  77 | Berkeley Prep SS             | 30.83 ± 1.77 |     58 |       37 | 61.05%           |
-|  78 | Mamaroneck LP                | 30.77 ± 1.81 |     36 |       24 | 60.0%            |
-|  79 | Glenbrook South KK           | 30.75 ± 1.76 |     42 |       27 | 60.87%           |
-|  80 | Lowell ST                    | 30.73 ± 1.78 |     39 |       25 | 60.94%           |
-|  81 | Westwood CH                  | 30.5 ± 1.77  |     39 |       32 | 54.93%           |
-|  82 | Montgomery Bell MH           | 30.3 ± 1.93  |     20 |       16 | 55.56%           |
-|  83 | Nevada Union GW              | 30.25 ± 1.81 |     39 |       27 | 59.09%           |
-|  84 | Alpharetta NT                | 30.12 ± 1.89 |     27 |       18 | 60.0%            |
-|  85 | Glenbrook North KS           | 30.02 ± 1.94 |     29 |       18 | 61.7%            |
-|  86 | Presentation BS              | 29.94 ± 1.97 |     18 |       17 | 51.43%           |
-|  87 | OES CP                       | 29.92 ± 1.81 |     33 |       23 | 58.93%           |
-|  88 | Bronx Science DS             | 29.69 ± 1.99 |     23 |       16 | 58.97%           |
-|  89 | Bronx Science CM             | 29.67 ± 1.77 |     48 |       33 | 59.26%           |
-|  90 | Sonoma JM                    | 29.62 ± 1.75 |     39 |       32 | 54.93%           |
-|  91 | Glenbrook North WY           | 29.56 ± 1.97 |     29 |       17 | 63.04%           |
-|  92 | Ferris MC                    | 29.33 ± 1.83 |     27 |       21 | 56.25%           |
-|  93 | Damien AD                    | 29.24 ± 1.79 |     38 |       30 | 55.88%           |
-|  94 | Jesuit MR                    | 29.14 ± 1.83 |     31 |       29 | 51.67%           |
-|  95 | Mamaroneck BO                | 29.12 ± 1.81 |     32 |       26 | 55.17%           |
-|  96 | Mamaroneck LS                | 29.06 ± 1.8  |     52 |       39 | 57.14%           |
-|  97 | Peninsula LQ                 | 29.06 ± 1.98 |     26 |       15 | 63.41%           |
-|  98 | Bronx Science CE             | 28.99 ± 1.86 |     30 |       25 | 54.55%           |
-|  99 | Bronx Science FV             | 28.98 ± 1.76 |     36 |       29 | 55.38%           |
-| 100 | ADL BT                       | 28.88 ± 1.99 |     23 |       18 | 56.1%            |
+|----:|:-----------------------------|:-------------|-------:|---------:|:-----------------|
+|   1 | Minneapolis South CC         | 38.08 ± 1.77 |     64 |       20 | 76.19%           |
+|   2 | North Broward Prep DR        | 37.96 ± 1.78 |     82 |       25 | 76.64%           |
+|   3 | Montgomery Bell MP           | 37.81 ± 1.91 |     37 |       10 | 78.72%           |
+|   4 | Lexington BY                 | 37.55 ± 1.83 |     46 |       15 | 75.41%           |
+|   5 | Caddo Magnet KL              | 36.99 ± 1.78 |     45 |       18 | 71.43%           |
+|   6 | Glenbrook North BM           | 36.51 ± 1.79 |     42 |       17 | 71.19%           |
+|   7 | Coppell KC                   | 36.5 ± 1.77  |     58 |       20 | 74.36%           |
+|   8 | New Trier HM                 | 36.0 ± 1.78  |     44 |       18 | 70.97%           |
+|   9 | Bellarmine  HM               | 35.88 ± 1.81 |     40 |       17 | 70.18%           |
+|  10 | New Trier RW                 | 35.81 ± 1.78 |     54 |       20 | 72.97%           |
+|  11 | Glenbrook South MJ           | 35.63 ± 1.99 |     23 |       10 | 69.7%            |
+|  12 | Chaminade AH                 | 35.19 ± 1.77 |     36 |       20 | 64.29%           |
+|  13 | CK McClatchy BG              | 35.19 ± 1.81 |     46 |       19 | 70.77%           |
+|  14 | Westminster SB               | 35.13 ± 1.73 |     49 |       24 | 67.12%           |
+|  15 | Greenhill FS                 | 34.98 ± 1.79 |     43 |       18 | 70.49%           |
+|  16 | Peninsula RW                 | 34.86 ± 1.76 |     47 |       22 | 68.12%           |
+|  17 | Glenbrook North BC           | 34.65 ± 1.87 |     38 |       16 | 70.37%           |
+|  18 | McQueen LR                   | 34.63 ± 1.82 |     49 |       18 | 73.13%           |
+|  19 | Maine East PP                | 34.51 ± 1.8  |     46 |       21 | 68.66%           |
+|  20 | Berkeley Prep KZ             | 34.39 ± 1.76 |     41 |       24 | 63.08%           |
+|  21 | Glenbrook South JM           | 34.38 ± 1.99 |     28 |       12 | 70.0%            |
+|  22 | Liberal Arts and Science GP  | 34.26 ± 1.74 |     56 |       27 | 67.47%           |
+|  23 | Edina AA                     | 34.25 ± 1.75 |     49 |       23 | 68.06%           |
+|  24 | Mamaroneck RM                | 34.17 ± 1.88 |     33 |       14 | 70.21%           |
+|  25 | Mamaroneck DR                | 34.04 ± 1.77 |     61 |       28 | 68.54%           |
+|  26 | Montgomery Bell PC           | 33.91 ± 1.84 |     32 |       15 | 68.09%           |
+|  27 | Gunn OS                      | 33.9 ± 1.8   |     56 |       23 | 70.89%           |
+|  28 | Walter Payton MW             | 33.89 ± 1.89 |     32 |       15 | 68.09%           |
+|  29 | SF Roosevelt LT              | 33.87 ± 1.8  |     44 |       20 | 68.75%           |
+|  30 | Bellarmine  IG               | 33.79 ± 1.79 |     45 |       20 | 69.23%           |
+|  31 | Meadows HY                   | 33.66 ± 1.8  |     39 |       19 | 67.24%           |
+|  32 | Reagan AG                    | 33.63 ± 1.85 |     46 |       16 | 74.19%           |
+|  33 | Little Rock Central GR       | 33.63 ± 1.78 |     49 |       24 | 67.12%           |
+|  34 | Notre Dame DN                | 33.61 ± 1.77 |     47 |       23 | 67.14%           |
+|  35 | Pine Crest ER                | 33.58 ± 1.82 |     47 |       22 | 68.12%           |
+|  36 | Little Rock Central LP       | 33.43 ± 1.95 |     24 |       13 | 64.86%           |
+|  37 | West HS SLC GR               | 33.36 ± 1.76 |     46 |       25 | 64.79%           |
+|  38 | Notre Dame KS                | 33.34 ± 1.92 |     26 |       15 | 63.41%           |
+|  39 | Northside  RS                | 33.3 ± 1.79  |     36 |       20 | 64.29%           |
+|  40 | Peninsula FP                 | 33.25 ± 1.79 |     37 |       22 | 62.71%           |
+|  41 | Woodward GR                  | 33.21 ± 1.92 |     29 |       14 | 67.44%           |
+|  42 | Northview AI                 | 33.18 ± 1.81 |     37 |       20 | 64.91%           |
+|  43 | Westwood NY                  | 33.04 ± 1.79 |     45 |       23 | 66.18%           |
+|  44 | Westminster YL               | 32.92 ± 1.93 |     23 |       13 | 63.89%           |
+|  45 | Eagan LS                     | 32.85 ± 1.76 |     42 |       26 | 61.76%           |
+|  46 | Washburn Rural PW            | 32.8 ± 1.85  |     34 |       18 | 65.38%           |
+|  47 | Liberal Arts and Science BR  | 32.68 ± 1.75 |     56 |       28 | 66.67%           |
+|  48 | North Broward Prep GG        | 32.47 ± 1.73 |     54 |       33 | 62.07%           |
+|  49 | Glenbrook North BG           | 32.42 ± 1.79 |     38 |       22 | 63.33%           |
+|  50 | Lexington TK                 | 32.35 ± 1.92 |     27 |       15 | 64.29%           |
+|  51 | Greenhill GR                 | 32.31 ± 1.81 |     35 |       21 | 62.5%            |
+|  52 | Calvert Hall BL              | 32.3 ± 1.76  |     47 |       27 | 63.51%           |
+|  53 | Barstow BM                   | 32.3 ± 1.89  |     29 |       15 | 65.91%           |
+|  54 | James Logan BM               | 32.26 ± 1.85 |     34 |       20 | 62.96%           |
+|  55 | Archbishop Mitty DR          | 32.01 ± 1.86 |     35 |       18 | 66.04%           |
+|  56 | Stuyvesant NR                | 31.99 ± 1.84 |     42 |       21 | 66.67%           |
+|  57 | Westminster KY               | 31.95 ± 1.94 |     28 |       14 | 66.67%           |
+|  58 | Oak Park and River Forest SR | 31.87 ± 1.89 |     27 |       17 | 61.36%           |
+|  59 | Georgetown Day MW            | 31.84 ± 1.81 |     30 |       20 | 60.0%            |
+|  60 | Liberal Arts and Science HW  | 31.8 ± 1.72  |     47 |       28 | 62.67%           |
+|  61 | Georgetown Day BS            | 31.73 ± 1.85 |     36 |       18 | 66.67%           |
+|  62 | Interlake CP                 | 31.61 ± 1.91 |     27 |       16 | 62.79%           |
+|  63 | Valley International Prep AU | 31.59 ± 1.79 |     50 |       26 | 65.79%           |
+|  64 | Westminster BW               | 31.58 ± 1.82 |     38 |       23 | 62.3%            |
+|  65 | New Trier JW                 | 31.58 ± 1.76 |     43 |       27 | 61.43%           |
+|  66 | Georgetown Day BL            | 31.5 ± 1.87  |     31 |       17 | 64.58%           |
+|  67 | Bellarmine  MT               | 31.49 ± 1.87 |     28 |       18 | 60.87%           |
+|  68 | Notre Dame AY                | 31.4 ± 1.86  |     33 |       17 | 66.0%            |
+|  69 | CK McClatchy SP              | 31.32 ± 1.98 |     27 |       14 | 65.85%           |
+|  70 | Alpharetta SN                | 31.24 ± 1.86 |     29 |       19 | 60.42%           |
+|  71 | Shark RW                     | 31.23 ± 1.84 |     39 |       21 | 65.0%            |
+|  72 | Damien DT                    | 31.2 ± 1.78  |     41 |       28 | 59.42%           |
+|  73 | Leland LZ                    | 31.01 ± 1.88 |     31 |       17 | 64.58%           |
+|  74 | Berkeley Prep SS             | 30.99 ± 1.76 |     58 |       37 | 61.05%           |
+|  75 | Interlake GQ                 | 30.96 ± 1.96 |     20 |       13 | 60.61%           |
+|  76 | Glenbrook South KK           | 30.84 ± 1.75 |     42 |       27 | 60.87%           |
+|  77 | Kent Denver CM               | 30.74 ± 1.83 |     35 |       21 | 62.5%            |
+|  78 | Bronx Science CM             | 30.74 ± 1.76 |     48 |       33 | 59.26%           |
+|  79 | Lowell ST                    | 30.6 ± 1.79  |     39 |       25 | 60.94%           |
+|  80 | Niles West BB                | 30.53 ± 1.77 |     43 |       30 | 58.9%            |
+|  81 | Nevada Union GW              | 30.39 ± 1.78 |     39 |       27 | 59.09%           |
+|  82 | Liberal Arts and Science MC  | 30.21 ± 1.78 |     38 |       26 | 59.38%           |
+|  83 | Westwood CH                  | 30.01 ± 1.78 |     39 |       32 | 54.93%           |
+|  84 | Mamaroneck LS                | 30.0 ± 1.75  |     52 |       39 | 57.14%           |
+|  85 | Peninsula MS                 | 29.87 ± 1.81 |     33 |       26 | 55.93%           |
+|  86 | Glenbrook North WY           | 29.84 ± 1.96 |     29 |       17 | 63.04%           |
+|  87 | Mamaroneck LP                | 29.62 ± 1.81 |     36 |       24 | 60.0%            |
+|  88 | Glenbrook North KS           | 29.57 ± 1.93 |     29 |       18 | 61.7%            |
+|  89 | Montgomery Bell MH           | 29.56 ± 1.97 |     20 |       16 | 55.56%           |
+|  90 | Cypress Bay LL               | 29.49 ± 1.88 |     27 |       18 | 60.0%            |
+|  91 | Alpharetta NT                | 29.26 ± 1.88 |     27 |       18 | 60.0%            |
+|  92 | Presentation BS              | 29.11 ± 1.99 |     18 |       17 | 51.43%           |
+|  93 | Sonoma JM                    | 28.92 ± 1.76 |     39 |       32 | 54.93%           |
+|  94 | Damien AD                    | 28.9 ± 1.78  |     38 |       30 | 55.88%           |
+|  95 | Peninsula LQ                 | 28.88 ± 1.99 |     26 |       15 | 63.41%           |
+|  96 | Mamaroneck BO                | 28.8 ± 1.81  |     32 |       26 | 55.17%           |
+|  97 | Bronx Science CE             | 28.71 ± 1.86 |     30 |       25 | 54.55%           |
+|  98 | Jesuit MR                    | 28.58 ± 1.83 |     31 |       29 | 51.67%           |
+|  99 | OES CP                       | 28.54 ± 1.83 |     33 |       23 | 58.93%           |
+| 100 | ADL BT                       | 28.41 ± 1.95 |     23 |       18 | 56.1%            |
      
 Most Active Judges (# of rounds):  
 |    | Judge             |   # of rounds |   Aff Votes |   Neg Votes |

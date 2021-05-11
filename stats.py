@@ -6,6 +6,7 @@ import trueskill as ts
 from pathlib import Path
 from matplotlib import pyplot as plt
 from collections import defaultdict
+from sklearn.utils import shuffle
 
 # %%
 ts_env = ts.TrueSkill(mu=25, sigma=25/3, beta=5, tau=0.3)
@@ -17,7 +18,6 @@ pathlist = Path('data').rglob('*.csv')
 for path in pathlist:
     rounds = rounds.append(pd.read_csv(str(path)))
 print(f'{len(rounds)} rounds loaded.')
-rounds
 
 # %% clean
 rounds = rounds.replace({'Result': '\d-\d\t+NEG'}, {'Result':'NEG'}, regex=True)
@@ -35,22 +35,31 @@ else:
     print(f'{round(100 - aff_count*100/(aff_count + neg_count) - 50, 2)}% Neg Bias')
 
 # %%
-ratings = {}
-win_loss = defaultdict(lambda: [0,0])
-for r in rounds.iterrows():
-    if r[1]['Aff'] not in ratings:
-        ratings[r[1]['Aff']] = ts.Rating()
-    if r[1]['Neg'] not in ratings:
-        ratings[r[1]['Neg']] = ts.Rating()
-    if r[1]['Result'] == 'Aff':
-        win_loss[r[1]['Aff']][0] += 1
-        win_loss[r[1]['Neg']][1] += 1
-        ratings[r[1]['Aff']], ratings[r[1]['Neg']] = ts.rate_1vs1(ratings[r[1]['Aff']], ratings[r[1]['Neg']])
-    else:
-        win_loss[r[1]['Aff']][1] += 1
-        win_loss[r[1]['Neg']][0] += 1
-        ratings[r[1]['Neg']], ratings[r[1]['Aff']] = ts.rate_1vs1(ratings[r[1]['Neg']], ratings[r[1]['Aff']])
+def rate(rounds):
+    ratings = {}
+    win_loss = defaultdict(lambda: [0,0])
+    for r in rounds.iterrows():
+        if r[1]['Aff'] not in ratings:
+            ratings[r[1]['Aff']] = ts.Rating()
+        if r[1]['Neg'] not in ratings:
+            ratings[r[1]['Neg']] = ts.Rating()
+        if r[1]['Result'] == 'Aff':
+            win_loss[r[1]['Aff']][0] += 1
+            win_loss[r[1]['Neg']][1] += 1
+            ratings[r[1]['Aff']], ratings[r[1]['Neg']] = ts.rate_1vs1(ratings[r[1]['Aff']], ratings[r[1]['Neg']])
+        else:
+            win_loss[r[1]['Aff']][1] += 1
+            win_loss[r[1]['Neg']][0] += 1
+            ratings[r[1]['Neg']], ratings[r[1]['Aff']] = ts.rate_1vs1(ratings[r[1]['Neg']], ratings[r[1]['Aff']])
+    return ratings, win_loss
 
+ratings, win_loss = rate(rounds)
+pool = 10
+for i in range(pool-1):
+    rounds = shuffle(rounds)
+    temp, _ = rate(rounds)
+    ratings = {team : ts.Rating(mu=(temp[team].mu + ratings[team].mu), sigma=(temp[team].sigma + ratings[team].sigma)) for team in temp}
+ratings = {team : ts.Rating(mu=(ratings[team].mu/pool), sigma=(ratings[team].sigma/pool)) for team in ratings}
 
 # %%
 teams_ranked = sorted(filter(lambda x: ratings[x].sigma < 2, list(ratings.keys())), key=lambda x: (-ratings[x].mu, ratings[x].sigma))
