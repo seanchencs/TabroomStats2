@@ -1,10 +1,8 @@
 # %%
 import pandas as pd
 import numpy as np
-import os
 import trueskill as ts
 from pathlib import Path
-from matplotlib import pyplot as plt
 from collections import defaultdict
 from sklearn.utils import shuffle
 
