@@ -20,7 +20,6 @@ print(f'{len(rounds)} rounds loaded.')
 # %% clean
 rounds = rounds.replace({'Result': '\d-\d\t+NEG'}, {'Result':'NEG'}, regex=True)
 rounds = rounds.replace({'Result': '\d-\d\t+AFF'}, {'Result':'AFF'}, regex=True)
-# rounds = rounds.replace({'Aff': '.+&.+'}, {'Aff': ''})
 rounds = rounds.dropna(subset=['Aff', 'Neg', 'Result'])
 print(f'{len(rounds)} rounds after cleaning.')
 
@@ -60,7 +59,7 @@ for i in range(pool-1):
 ratings = {team : ts.Rating(mu=(ratings[team].mu/pool), sigma=(ratings[team].sigma/pool)) for team in ratings}
 
 # %%
-teams_ranked = sorted(filter(lambda x: ratings[x].sigma < 2, list(ratings.keys())), key=lambda x: (-ratings[x].mu, ratings[x].sigma))
+teams_ranked = sorted(filter(lambda x: ratings[x].sigma < 2.25, list(ratings.keys())), key=lambda x: (-ratings[x].mu, ratings[x].sigma))
 labels = ('Team', 'TrueSkill', 'Wins', 'Losses', 'Win Percentage')
 df = pd.DataFrame(columns=labels)
 print('TrueSkill Ranks:')
