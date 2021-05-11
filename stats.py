@@ -51,21 +51,25 @@ for r in rounds.iterrows():
         win_loss[r[1]['Neg']][0] += 1
         ratings[r[1]['Neg']], ratings[r[1]['Aff']] = ts.rate_1vs1(ratings[r[1]['Neg']], ratings[r[1]['Aff']])
 
+
 # %%
 teams_ranked = sorted(filter(lambda x: ratings[x].sigma < 2, list(ratings.keys())), key=lambda x: (-ratings[x].mu, ratings[x].sigma))
-# teams_ranked = sorted(list(ratings.keys()), key=lambda x: (-(ratings[x].mu-ratings[x].sigma)))
+labels = ('Team', 'TrueSkill', 'Wins', 'Losses')
+df = pd.DataFrame(columns=labels)
 print('TrueSkill Ranks:')
 for i in range(50):
     team = teams_ranked[i]
-    print(f'{i+1}.  {team} ({round(ratings[team].mu, 2)} ± {round(ratings[team].sigma, 2)}) [{win_loss[team][0]}W {win_loss[team][1]}L]  ')
-
-# %%
-for team in ratings:
-    plt.hist([x.mu for x in ratings.values()])
+    row = pd.Series([team, f'{round(ratings[team].mu, 2)} ± {round(ratings[team].sigma, 2)}', win_loss[team][0], win_loss[team][1]], index=labels)
+    df = df.append(row, ignore_index=True)
+df.index = np.arange(1, len(df)+1)
+print(df.to_markdown())
 
 # %%
 print('Most Active Teams (# of rounds): ')
-rounds['Aff'].append(rounds['Neg']).value_counts()[:30]
+i = 1
+for team in rounds['Aff'].append(rounds['Neg']).value_counts()[:30].iteritems():
+    print(f'{i}.  {team[0]} ({team[1]})  ')
+    i += 1
 
 # %%
 print('Most Active Judges (# of rounds):')
