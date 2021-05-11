@@ -54,12 +54,12 @@ for r in rounds.iterrows():
 
 # %%
 teams_ranked = sorted(filter(lambda x: ratings[x].sigma < 2, list(ratings.keys())), key=lambda x: (-ratings[x].mu, ratings[x].sigma))
-labels = ('Team', 'TrueSkill', 'Wins', 'Losses')
+labels = ('Team', 'TrueSkill', 'Wins', 'Losses', 'Win Percentage')
 df = pd.DataFrame(columns=labels)
 print('TrueSkill Ranks:')
-for i in range(50):
+for i in range(100):
     team = teams_ranked[i]
-    row = pd.Series([team, f'{round(ratings[team].mu, 2)} ± {round(ratings[team].sigma, 2)}', win_loss[team][0], win_loss[team][1]], index=labels)
+    row = pd.Series([team, f'{round(ratings[team].mu, 2)} ± {round(ratings[team].sigma, 2)}', win_loss[team][0], win_loss[team][1], f'{round(win_loss[team][0]*100/(win_loss[team][0]+win_loss[team][1]), 2)}%'], index=labels)
     df = df.append(row, ignore_index=True)
 df.index = np.arange(1, len(df)+1)
 print(df.to_markdown())
