@@ -159,3 +159,162 @@ Most Active Judges (# of rounds):
 | 48 | Jack Moore        |            33 |          19 |          14 |
 | 49 | Jorman Antigua    |            33 |          15 |          18 |
 | 50 | Robert Whitaker   |            32 |          18 |          14 |
+  
+## NDT-CEDA 2020-21  
+Top 100 Teams by TrueSkill Rating (σ < 2, pool = 100):  
+|     | Team                        | TrueSkill    |   Wins |   Losses | Win Percentage   |
+|----:|:----------------------------|:-------------|-------:|---------:|:-----------------|
+|   1 | Michigan PR                 | 33.93 ± 1.21 |     46 |       15 | 75.41%           |
+|   2 | Rutgers-Newark AH           | 33.59 ± 1.55 |     27 |        9 | 75.0%            |
+|   3 | Kentucky EG                 | 33.18 ± 1.82 |     18 |        7 | 72.0%            |
+|   4 | Kansas RM                   | 32.94 ± 1.77 |     16 |        8 | 66.67%           |
+|   5 | Northwestern FL             | 32.43 ± 1.88 |     16 |        7 | 69.57%           |
+|   6 | Emory GK                    | 32.2 ± 1.21  |     35 |       18 | 66.04%           |
+|   7 | Wake Forest KM              | 32.07 ± 1.4  |     27 |       14 | 65.85%           |
+|   8 | Michigan MM                 | 31.91 ± 1.2  |     40 |       18 | 68.97%           |
+|   9 | Kansas MS                   | 31.42 ± 1.52 |     24 |       11 | 68.57%           |
+|  10 | Wake Forest FH              | 31.41 ± 1.49 |     24 |       12 | 66.67%           |
+|  11 | Harvard AH                  | 31.38 ± 1.69 |     17 |        9 | 65.38%           |
+|  12 | Wake Forest BD              | 31.34 ± 1.5  |     22 |       11 | 66.67%           |
+|  13 | Dartmouth TV                | 31.15 ± 1.1  |     38 |       27 | 58.46%           |
+|  14 | UC Berkeley BW              | 31.01 ± 1.36 |     27 |       15 | 64.29%           |
+|  15 | Northwestern FW             | 30.9 ± 1.37  |     23 |       16 | 58.97%           |
+|  16 | Michigan PS                 | 30.85 ± 1.11 |     45 |       25 | 64.29%           |
+|  17 | Southern California KS      | 30.82 ± 1.18 |     35 |       24 | 59.32%           |
+|  18 | Kansas MR                   | 30.81 ± 1.36 |     25 |       16 | 60.98%           |
+|  19 | Kentucky DG                 | 30.7 ± 1.46  |     22 |       13 | 62.86%           |
+|  20 | Minnesota PR                | 30.67 ± 1.93 |     17 |        7 | 70.83%           |
+|  21 | Louisville BY               | 30.58 ± 1.47 |     22 |       14 | 61.11%           |
+|  22 | Harvard AF                  | 30.57 ± 1.55 |     21 |       12 | 63.64%           |
+|  23 | UC Berkeley EE              | 30.32 ± 1.19 |     38 |       22 | 63.33%           |
+|  24 | Pittsburgh MO               | 30.28 ± 1.75 |     15 |       10 | 60.0%            |
+|  25 | Minnesota FR                | 30.22 ± 1.18 |     39 |       21 | 65.0%            |
+|  26 | Kansas SM                   | 30.18 ± 1.58 |     21 |       12 | 63.64%           |
+|  27 | Texas DW                    | 30.09 ± 1.31 |     32 |       18 | 64.0%            |
+|  28 | Georgetown MW               | 30.05 ± 1.19 |     36 |       22 | 62.07%           |
+|  29 | Georgetown EN               | 29.92 ± 1.86 |     18 |        8 | 69.23%           |
+|  30 | Samford EG                  | 29.77 ± 1.19 |     39 |       21 | 65.0%            |
+|  31 | Cal State Fullerton BW      | 29.71 ± 1.22 |     39 |       21 | 65.0%            |
+|  32 | Dartmouth MS                | 29.59 ± 1.21 |     34 |       20 | 62.96%           |
+|  33 | Emory MS                    | 29.5 ± 1.48  |     23 |       14 | 62.16%           |
+|  34 | Pittsburgh OM               | 29.48 ± 1.47 |     22 |       13 | 62.86%           |
+|  35 | Pittsburgh LR               | 29.36 ± 1.4  |     24 |       16 | 60.0%            |
+|  36 | Kansas BF                   | 29.2 ± 1.25  |     29 |       23 | 55.77%           |
+|  37 | Emory PR                    | 29.13 ± 1.29 |     26 |       20 | 56.52%           |
+|  38 | Michigan HS                 | 29.0 ± 1.28  |     33 |       19 | 63.46%           |
+|  39 | Iowa BR                     | 28.8 ± 1.67  |     16 |       12 | 57.14%           |
+|  40 | Emory GM                    | 28.56 ± 1.36 |     24 |       19 | 55.81%           |
+|  41 | UNLV RR                     | 28.35 ± 1.23 |     34 |       23 | 59.65%           |
+|  42 | George Mason LM             | 28.24 ± 1.18 |     37 |       25 | 59.68%           |
+|  43 | NYU ST                      | 28.19 ± 1.25 |     33 |       21 | 61.11%           |
+|  44 | Michigan HM                 | 28.16 ± 1.27 |     33 |       21 | 61.11%           |
+|  45 | Rochester AM                | 27.96 ± 1.37 |     25 |       19 | 56.82%           |
+|  46 | Michigan State GS           | 27.82 ± 1.46 |     21 |       18 | 53.85%           |
+|  47 | Emporia State KS            | 27.8 ± 1.3   |     29 |       21 | 58.0%            |
+|  48 | Georgetown AG               | 27.71 ± 1.11 |     42 |       30 | 58.33%           |
+|  49 | Central Oklahoma CH         | 27.46 ± 1.27 |     29 |       21 | 58.0%            |
+|  50 | Dartmouth GS                | 27.46 ± 1.32 |     24 |       22 | 52.17%           |
+|  51 | West Georgia DS             | 27.39 ± 1.61 |     15 |       15 | 50.0%            |
+|  52 | Purdue SJ                   | 27.31 ± 1.86 |     12 |        9 | 57.14%           |
+|  53 | Wake Forest KT              | 27.29 ± 1.63 |     18 |       14 | 56.25%           |
+|  54 | Michigan RV                 | 27.2 ± 1.28  |     33 |       24 | 57.89%           |
+|  55 | George Mason BG             | 27.05 ± 1.33 |     24 |       21 | 53.33%           |
+|  56 | Kansas PS                   | 26.95 ± 1.91 |     12 |       10 | 54.55%           |
+|  57 | Liberty WW                  | 26.94 ± 1.08 |     39 |       35 | 52.7%            |
+|  58 | Houston FL                  | 26.87 ± 1.78 |     13 |       11 | 54.17%           |
+|  59 | Johnson County Community BB | 26.86 ± 1.58 |     18 |       15 | 54.55%           |
+|  60 | Michigan State AM           | 26.86 ± 1.29 |     25 |       22 | 53.19%           |
+|  61 | Harvard OY                  | 26.84 ± 1.45 |     19 |       17 | 52.78%           |
+|  62 | Georgia MW                  | 26.7 ± 1.8   |     12 |       10 | 54.55%           |
+|  63 | Baylor Nguyen & Wyatt       | 26.63 ± 1.98 |     15 |       12 | 55.56%           |
+|  64 | Michigan State BK           | 26.59 ± 1.44 |     19 |       21 | 47.5%            |
+|  65 | Gonzaga HM                  | 26.58 ± 1.29 |     27 |       23 | 54.0%            |
+|  66 | Kansas SP                   | 26.52 ± 1.67 |     16 |       13 | 55.17%           |
+|  67 | Georgetown LM               | 26.46 ± 1.55 |     16 |       15 | 51.61%           |
+|  68 | Kentucky BL                 | 26.44 ± 1.53 |     18 |       17 | 51.43%           |
+|  69 | CSU Long Beach CF           | 25.89 ± 1.97 |      8 |       10 | 44.44%           |
+|  70 | Liberty CoRo                | 25.89 ± 1.25 |     25 |       26 | 49.02%           |
+|  71 | Binghamton AM               | 25.71 ± 1.54 |     17 |       16 | 51.52%           |
+|  72 | Wichita State BM            | 25.7 ± 1.73  |     13 |       14 | 48.15%           |
+|  73 | Missouri State EG           | 25.64 ± 1.52 |     17 |       17 | 50.0%            |
+|  74 | Navy LR                     | 25.57 ± 1.07 |     39 |       40 | 49.37%           |
+|  75 | Liberty CaRa                | 25.51 ± 1.81 |     11 |       12 | 47.83%           |
+|  76 | Northwestern LS             | 25.41 ± 1.96 |     10 |       11 | 47.62%           |
+|  77 | George Mason AS             | 24.99 ± 1.43 |     19 |       20 | 48.72%           |
+|  78 | Missouri State KR           | 24.89 ± 1.84 |     10 |       12 | 45.45%           |
+|  79 | Kansas SW                   | 24.87 ± 2.0  |      9 |       11 | 45.0%            |
+|  80 | Wayne State MR              | 24.84 ± 1.97 |     10 |       12 | 45.45%           |
+|  81 | Kentucky DW                 | 24.54 ± 1.53 |     15 |       19 | 44.12%           |
+|  82 | Liberty CR                  | 24.41 ± 1.38 |     20 |       24 | 45.45%           |
+|  83 | Louisville BD               | 24.4 ± 1.81  |     12 |       14 | 46.15%           |
+|  84 | UC Berkeley FQ              | 24.34 ± 1.91 |     10 |       14 | 41.67%           |
+|  85 | Wyoming KP                  | 24.07 ± 1.99 |      9 |       11 | 45.0%            |
+|  86 | Liberty SW                  | 24.04 ± 1.58 |     17 |       20 | 45.95%           |
+|  87 | UT Dallas BK                | 23.84 ± 1.9  |      9 |       12 | 42.86%           |
+|  88 | Texas HN                    | 23.77 ± 1.94 |     10 |       11 | 47.62%           |
+|  89 | James Madison HS            | 23.74 ± 1.21 |     24 |       34 | 41.38%           |
+|  90 | UT Dallas LM                | 23.59 ± 1.5  |     19 |       21 | 47.5%            |
+|  91 | Minnesota FM                | 23.4 ± 1.29  |     23 |       31 | 42.59%           |
+|  92 | Wyoming MR                  | 23.23 ± 1.49 |     17 |       23 | 42.5%            |
+|  93 | Cal State Fullerton RH      | 22.91 ± 1.86 |      9 |       15 | 37.5%            |
+|  94 | Harvard/Amherst GM          | 22.24 ± 1.78 |      9 |       17 | 34.62%           |
+|  95 | Binghamton PP               | 22.23 ± 1.52 |     15 |       23 | 39.47%           |
+|  96 | NYU HP                      | 21.95 ± 1.37 |     20 |       33 | 37.74%           |
+|  97 | Samford GT                  | 21.81 ± 1.32 |     20 |       31 | 39.22%           |
+|  98 | Wyoming PP                  | 21.47 ± 1.9  |     10 |       15 | 40.0%            |
+|  99 | Minnesota GJ                | 21.38 ± 1.97 |      9 |       16 | 36.0%            |
+| 100 | Emory NP                    | 20.87 ± 1.83 |     10 |       19 | 34.48%           |  
+  
+Most Active Judges (# of rounds):  
+|    | Judge               |   # of rounds |   Aff Votes |   Neg Votes |
+|---:|:--------------------|--------------:|------------:|------------:|
+|  1 | Gabriel Morbeck     |            40 |          18 |          22 |
+|  2 | Lauren Pepper       |            39 |          21 |          18 |
+|  3 | Flynn Makuch        |            35 |          19 |          16 |
+|  4 | Will Baker          |            32 |          17 |          15 |
+|  5 | Habiba Ahmed        |            32 |          19 |          13 |
+|  6 | Michelle Thomas     |            28 |          13 |          15 |
+|  7 | Brandon Kelley      |            27 |          14 |          13 |
+|  8 | Jackie Poapst       |            27 |          13 |          14 |
+|  9 | Genevieve Hackman   |            26 |          11 |          15 |
+| 10 | Devane Murphy       |            25 |          16 |           9 |
+| 11 | Derek Hilligoss     |            25 |          14 |          11 |
+| 12 | Simon Sheaff        |            25 |          13 |          12 |
+| 13 | John Turner         |            24 |           9 |          15 |
+| 14 | Nathan Fleming      |            23 |          10 |          13 |
+| 15 | Timothy Byram       |            23 |           8 |          15 |
+| 16 | Josh Lamet          |            23 |          12 |          11 |
+| 17 | Pablo Gannon        |            23 |          15 |           8 |
+| 18 | Jada Stinnett       |            22 |          13 |           9 |
+| 19 | Douglas Husic       |            22 |          16 |           6 |
+| 20 | Brett Bricker       |            22 |          11 |          11 |
+| 21 | David Kilpatrick    |            22 |           9 |          13 |
+| 22 | Rebecca Steiner     |            22 |          11 |          11 |
+| 23 | Young Kwon          |            22 |          13 |           9 |
+| 24 | Anthony Joseph      |            22 |          15 |           7 |
+| 25 | Michael Barlow      |            22 |           9 |          13 |
+| 26 | Miles Gray          |            21 |           5 |          16 |
+| 27 | Jenna Bauer         |            21 |           9 |          12 |
+| 28 | Tyler Wiseman       |            20 |           8 |          12 |
+| 29 | V Keenan            |            20 |           7 |          13 |
+| 30 | Christopher Jackson |            20 |          14 |           6 |
+| 31 | Will Katz           |            20 |          12 |           8 |
+| 32 | Sean Kennedy        |            20 |           8 |          12 |
+| 33 | Marquis Ard         |            19 |          11 |           8 |
+| 34 | Jefferson Yahom     |            19 |           6 |          13 |
+| 35 | Brianna Thomas      |            19 |           7 |          12 |
+| 36 | Matt Harkins        |            19 |           9 |          10 |
+| 37 | Nyx Moore           |            19 |           7 |          12 |
+| 38 | Ryan Galloway       |            18 |           9 |           9 |
+| 39 | Connor Munsinger    |            18 |           6 |          12 |
+| 40 | Armands Revelins    |            18 |           7 |          11 |
+| 41 | Hannah Call         |            18 |          13 |           5 |
+| 42 | Parker Hopkins      |            18 |           6 |          12 |
+| 43 | Lincoln Garrett     |            17 |          13 |           4 |
+| 44 | Caitlin Walrath     |            17 |           8 |           9 |
+| 45 | Ezra Louvis         |            17 |          11 |           6 |
+| 46 | Vladimir Pavlov     |            17 |           9 |           8 |
+| 47 | Jazmine Pickens     |            16 |           6 |          10 |
+| 48 | Victoria Yonter     |            16 |           4 |          12 |
+| 49 | Jesse Keleman       |            16 |           7 |           9 |
+| 50 | Nate Graziano       |            16 |           6 |          10 |
