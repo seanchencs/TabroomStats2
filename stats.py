@@ -64,8 +64,7 @@ teams_ranked = sorted(filter(lambda x: ratings[x].sigma < 2.25, list(ratings.key
 labels = ('Team', 'TrueSkill', 'Wins', 'Losses', 'Win Percentage')
 df = pd.DataFrame(columns=labels)
 print('TrueSkill Ranks:')
-for i in range(len(teams_ranked)):
-    team = teams_ranked[i]
+for i, team in enumerate(teams_ranked):
     row = pd.Series([team, f'{round(ratings[team].mu, 2)} ± {round(ratings[team].sigma, 2)}', win_loss[team][0], win_loss[team][1], f'{round(win_loss[team][0]*100/(win_loss[team][0]+win_loss[team][1]), 2)}%'], index=labels)
     df = df.append(row, ignore_index=True)
 df.index = np.arange(1, len(df)+1)
