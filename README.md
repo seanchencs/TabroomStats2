@@ -1,4 +1,7 @@
 # TabroomStats2
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bc683d03aaa44b8f9f2564c269379514)](https://app.codacy.com/gh/seanchencs/TabroomStats2?utm_source=github.com&utm_medium=referral&utm_content=seanchencs/TabroomStats2&utm_campaign=Badge_Grade_Settings)
+
 Python data science stack based rewrite of TabroomStats. Rankings implemented with the TrueSkill algorithm (non-linear). Includes data for 2020-21 TOC bid tournaments.
 
 ## HS TOC 20-21
